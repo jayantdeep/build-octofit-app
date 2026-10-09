@@ -1,0 +1,306 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 64px;
+}
+
+.topbar {
+  align-items: center;
+  border-bottom: 1px solid #e6ebe2;
+  display: flex;
+  height: 88px;
+  justify-content: space-between;
+}
+
+.brand {
+  align-items: center;
+  color: #173d32;
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 750;
+  gap: 10px;
+  letter-spacing: -0.8px;
+  text-decoration: none;
+}
+
+.brand-mark {
+  align-items: center;
+  background: #173d32;
+  border-radius: 11px;
+  color: #d5f279;
+  display: inline-flex;
+  font-size: 17px;
+  height: 34px;
+  justify-content: center;
+  letter-spacing: 0;
+  width: 34px;
+}
+
+.brand-light {
+  color: #789186;
+  font-weight: 450;
+}
+
+.topbar-label,
+.eyebrow,
+.footer {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.topbar-label {
+  color: #839087;
+}
+
+.hero {
+  background: #f3f6f1;
+  border-radius: 4px;
+  margin-top: 34px;
+  min-height: 410px;
+  overflow: hidden;
+  padding: 80px 9%;
+  position: relative;
+}
+
+.eyebrow {
+  color: #547764;
+  margin: 0 0 18px;
+}
+
+.hero h1 {
+  color: #173d32;
+  font-size: clamp(44px, 6vw, 72px);
+  letter-spacing: -4px;
+  line-height: 1.03;
+  margin: 0;
+  max-width: 600px;
+}
+
+.hero h1 span {
+  color: #7c9a57;
+}
+
+.hero-copy {
+  color: #66776c;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 24px 0 28px;
+  max-width: 460px;
+}
+
+.start-link {
+  align-items: center;
+  background: #173d32;
+  border-radius: 3px;
+  color: white;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 650;
+  gap: 20px;
+  padding: 13px 17px;
+  text-decoration: none;
+}
+
+.start-link span {
+  color: #d5f279;
+  font-size: 17px;
+}
+
+.hero-orbit {
+  border: 1px solid rgba(124, 154, 87, 0.17);
+  border-radius: 50%;
+  height: 490px;
+  position: absolute;
+  right: -55px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 490px;
+}
+
+.orbit-two {
+  height: 350px;
+  right: 15px;
+  width: 350px;
+}
+
+.hero-dot {
+  background: #c5df85;
+  border: 16px solid rgba(197, 223, 133, 0.23);
+  border-radius: 50%;
+  height: 92px;
+  position: absolute;
+  right: 168px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 92px;
+}
+
+.platform {
+  padding: 86px 0 54px;
+}
+
+.section-heading {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  color: #173d32;
+  font-size: clamp(25px, 3vw, 34px);
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+
+.section-copy {
+  color: #758178;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-card {
+  border: 1px solid #e6ebe2;
+  border-radius: 4px;
+  min-height: 160px;
+  padding: 24px;
+}
+
+.feature-number {
+  color: #91a26f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.feature-card h3 {
+  color: #244638;
+  font-size: 17px;
+  margin: 24px 0 9px;
+}
+
+.feature-card p {
+  color: #758178;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.system-status {
+  align-items: center;
+  color: #758178;
+  display: flex;
+  font-size: 12px;
+  gap: 9px;
+  margin-top: 24px;
+}
+
+.status-indicator {
+  background: #e6b34f;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.status-indicator.is-connected {
+  background: #68a36c;
+}
+
+.status-indicator.has-error {
+  background: #c56b57;
+}
+
+.footer {
+  border-top: 1px solid #e6ebe2;
+  color: #879188;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 30px;
+}
+
+@media (max-width: 700px) {
+  .app-shell {
+    padding: 0 20px;
+  }
+
+  .topbar {
+    height: 72px;
+  }
+
+  .topbar-label {
+    display: none;
+  }
+
+  .hero {
+    min-height: 430px;
+    padding: 62px 28px;
+  }
+
+  .hero h1 {
+    letter-spacing: -2.5px;
+  }
+
+  .hero-orbit {
+    height: 260px;
+    right: -120px;
+    top: auto;
+    transform: none;
+    width: 260px;
+  }
+
+  .orbit-two {
+    height: 190px;
+    right: -85px;
+    width: 190px;
+  }
+
+  .hero-dot {
+    height: 52px;
+    right: 27px;
+    top: auto;
+    transform: none;
+    width: 52px;
+  }
+
+  .platform {
+    padding-top: 62px;
+  }
+
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: auto;
+  }
+
+  .feature-card h3 {
+    margin-top: 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
